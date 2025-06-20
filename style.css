@@ -1,0 +1,44 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+header {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+.logo {
+    height: 75px;
+}
+main {
+    padding: 1em;
+}
+#post-form, #news-section {
+    background: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+input, textarea {
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-size: 1em;
+}
+button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+.news-item {
+    border-top: 1px solid #ccc;
+    padding: 1em 0;
+}
+.news-item img {
+    max-width: 100%;
+    margin-top: 0.5em;
+}

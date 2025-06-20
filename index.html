@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>BNL News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://images-ext-1.discordapp.net/external/sS9KjmMR2q0py55__oIST2i0tWZZRaFz4WSjMG9bTqo/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1058044460933591050/05fd2b8dcd5766a827e13f684595e9f0.png?format=webp&quality=lossless&width=375&height=375" alt="BNL Logo" class="logo">
+        <h1>BNL News</h1>
+    </header>
+    <main>
+        <section id="post-form">
+            <h2>Nova Notícia</h2>
+            <input type="text" id="title" placeholder="Título">
+            <textarea id="content" placeholder="Conteúdo com formatação"></textarea>
+            <input type="text" id="image" placeholder="URL da imagem">
+            <button onclick="postNews()">Publicar</button>
+        </section>
+        <section id="news-section">
+            <h2>Notícias Publicadas</h2>
+            <div id="news-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
