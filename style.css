@@ -36,3 +36,38 @@ textarea {
     width: 100%;
     height: 150px;
 }
+
+
+.cabecalho {
+  background-color: #1a1a1a;
+  padding: 10px;
+  text-align: center;
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #00bfff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.noticia {
+  background: white;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.destaque {
+  border: 2px solid #00bfff;
+}

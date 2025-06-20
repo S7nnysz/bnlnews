@@ -60,3 +60,19 @@ function apagarNoticia(index) {
     localStorage.setItem("noticias", JSON.stringify(noticias));
     carregarNoticiasAdmin();
 }
+
+
+function mostrarMaisRecente() {
+  const noticias = JSON.parse(localStorage.getItem("noticias")) || [];
+  const container = document.getElementById("noticia-mais-recente");
+  if (!container || noticias.length === 0) return;
+
+  const n = noticias[noticias.length - 1];
+  container.innerHTML = `
+    <article class="noticia destaque">
+      <h2>${n.titulo}</h2>
+      <div>${n.conteudo}</div>
+      ${n.imagem ? `<img src="${n.imagem}" alt="Imagem da notícia" style="max-width: 100%;">` : ""}
+    </article>
+  `;
+}
