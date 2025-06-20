@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>BNL News - Área Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Área de Administração</h1>
+        <div id="login-section">
+            <label>Senha: <input type="password" id="senha"></label>
+            <button onclick="verificarSenha()">Entrar</button>
+        </div>
+        <div id="admin-panel" style="display:none;">
+            <h2>Publicar nova notícia</h2>
+            <input type="text" id="titulo" placeholder="Título"><br>
+            <textarea id="conteudo" placeholder="Conteúdo com formatação"></textarea><br>
+            <input type="text" id="imagem" placeholder="URL da imagem (opcional)"><br>
+            <button onclick="publicarNoticia()">Publicar</button>
+            <h2>Notícias Publicadas</h2>
+            <div id="lista-noticias"></div>
+        </div>
+    </main>
+    <footer>© 2025 BNL News</footer>
+    <script src="script.js"></script>
+</body>
+</html>
