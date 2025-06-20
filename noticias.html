@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>BNL News - Notícias</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>BNL News - Notícias</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregarNoticias()">
-    <header>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="noticias.html">Notícias</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="admin.html">Área Admin</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Notícias Recentes</h1>
-        <div id="noticias-container"></div>
-    </main>
-    <footer>© 2025 BNL News</footer>
-    <script src="script.js"></script>
+<body onload="listarNoticias()">
+  <header class="cabecalho">
+    <img class="logo" src="https://images-ext-1.discordapp.net/external/sS9KjmMR2q0py55__oIST2i0tWZZRaFz4WSjMG9bTqo/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1058044460933591050/05fd2b8dcd5766a827e13f684595e9f0.png?format=webp&quality=lossless&width=930&height=930" alt="BNL News Logo" />
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="admin.html">Área Admin</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Todas as Notícias</h1>
+    <div id="todas-noticias"></div>
+  </main>
+  <footer>© 2025 BNL News</footer>
+  <script src="script.js"></script>
 </body>
 </html>
